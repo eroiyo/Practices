@@ -1,0 +1,83 @@
+html, body{
+
+    margin: 0;
+    height: 100%;
+}
+
+#nav {
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+#nav Gmail {
+    margin-right: 20px;
+}
+
+#nav Gmail.topimage {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+#middle {
+    margin-top: -100px;
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#logo {
+    text-align: center;
+}
+
+#searchbarcontainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#searchbar{
+    padding-top:10px;
+    padding-bottom:10px;
+    outline: 0;
+    width:500px;
+    border-radius:10px;
+    border:2px solid #c5c5c5;
+}
+
+#searchbar:hover{
+    box-shadow: 0 0 10px 2px black;
+}
+
+html, body{
+    display: flex;
+    flex-direction: column;
+}
+#buttons
+{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.button{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: darkgray;
+}
+#links
+{
+    margin-top: 10px;
+    text-align: center
+}
+#footer-content{
+    background: #cecece;
+    border-top:1px solid black;
+    bottom: 0px;
+}
