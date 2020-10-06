@@ -1,0 +1,9 @@
+.container {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-gap:0px;
+}
+.active{
+    color:black
+}

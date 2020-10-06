@@ -1,0 +1,42 @@
+body{
+    background: grey;
+    color: white;
+    font-family: 'Roboto' sans-serif;
+}
+
+.header p {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+}
+.container{
+    max-width: 320px;
+    max-height: 320px;
+    border: 1px solid black;
+    font-size: 0;
+    line-height: 0px;
+    text-align: 0;
+    grid-gap:0;
+    margin:auto;
+
+}
+
+.grid {
+    display: inline-block;
+    background: white;
+    margin:auto;
+  }
+  .active {
+    background-color: black;
+  }
+  .button {
+    display: block;
+    height: 50px;
+    width: 120px;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+  }
