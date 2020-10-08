@@ -39,10 +39,10 @@ if(human=="ROCK"){
     human=1;
 }
 if(human=="PAPER"){
-    return 2;
+    human=2;
 }
 if(human=="SCISSOR"){
-    return 3;
+    human=3;
 }
 if(human==computer)
 {
@@ -93,13 +93,17 @@ while(s_start!=5)
    let input=humanplay();
    let enemy=computerplay();
    let a = PlayRound(input,enemy);
+   if(a!=null)
+{
    if(a==true)
    {
        Pscore++;
-   }else
+   }if(a==false)
    {
        PCscore++;
+       
    }
+}
    s_start++;
 }
 console.log(victory(Pscore, PCscore));
