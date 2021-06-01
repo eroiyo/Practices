@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- You can add a language to the page, is a good practice and better for web scrappers -->
+<html lang="en">
+<head>
+    <title>Google Clone</title>
+    <!-- try to keep this kind or tag in one line, this way is more clear -->
+    <link href="style.css" rel="stylesheet" />
+    <!-- This tag is to get, at any moment, the real width of the device is viewing the page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This line is to add the icon in the browser tab -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- normally, in html 5, we use a <nav> tag, is more descriptive, and again, a good practice -->
+    <div id="nav">
+        <!-- actually there isn't a "Gmail" tag  -->
+        <a href="#" class="toplink">Gmail</a>
+        <a href="#" class="toplink">Image</a>
+        <a href="#" class="topimage"></a>
+    </div>
+    <div id="middle">
+        <div id="logo">
+            <img src="googlelogo_color_272x92dp.png">
+        </div>
+        <div id="searchbarcontainer">
+            <input id="searchbar" type="text">
+        </div>
+        <div id="buttons">
+            <!-- Here, the same, if you need buttons, there is a button tag, i think is easier use it -->
+            <div class="button">
+                Beto Search
+            </div>
+            <!-- The div#button wasn't working so, nicer to get it out -->
+            <div class="button">
+                I´m Feeling Lucky
+            </div>
+        </div>
+        <div id="links">
+            Beto is offered in
+            <!-- Here i just added the hash(#) into the href attributes to avoid the reload
+            ad this way the browser knows that is a link and give that blue color everybody knows -->
+            <a href="#">A</a> <a href="#">B</a>
+        </div>
+    </div>
+    <div id="footer-content">
+        <a href="#">link A</a>
+        <a href="#">link B</a>
+    </div>
+</body>
+</html>
