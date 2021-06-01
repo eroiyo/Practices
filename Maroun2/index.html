@@ -1,0 +1,155 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+  <body>
+    <link href="style.css"
+    rel="stylesheet" />
+    <script src="script.js"></script>
+   <h1 id="title">The 900Sniper's Survey
+    </h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <fieldset>
+        <form id="survey-form">
+            <label for= "name" id="name-label">What's your name?</label><br>
+             <input type="text" id="name" name="name" placeholder="Enter your name here" required><br><br>
+            <label for= "email" id="email-label">What's your email?</label><br>
+            <input id="email" type="email" name= "email" placeholder="example@mail.com" required></input><br><br>
+          <label for="age" id="number-label">What's your age?</label><br>
+          <input id="number" type="number" placeholder="N=?" name="age" min="17" max="30"></input><br><br>
+         
+              <label for="dropdown" id="dropdown-label">What country are you from?</label><br>
+         
+         <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Select your country</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="search" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="#about">Afghanistan</a> <a href="#base">Albania</a>
+          <a href="#blog">Algeria</a> <a href="#contact">Andorra</a>
+          <a href="#custom">Angola</a> <a href="#support">Antigua and Barbuda</a>
+          <a href="#tools">Argentina</a> <a href="#tools">Armenia</a>
+          <a href="#tools">Australia</a> <a href="#tools">Austria</a>
+          <a href="#tools">Azerbaijan</a> <a href="#tools">Bahamas</a>
+          <a href="#tools">Bahrain</a> <a href="#tools">Bangladesh</a>
+          <a href="#tools">Barbados</a> <a href="#tools">Belarus</a>
+          <a href="#tools">Belgium</a> <a href="#tools">Belize</a>
+          <a href="#tools">Benin</a> <a href="#tools">Bhutan</a>
+          <a href="#tools">Bolivia</a> <a href="#tools">Bosnia and Herzegovina</a>
+          <a href="#tools">Botswana</a> <a href="#tools">Brazil</a>
+          <a href="#tools">Brunei</a> <a href="#tools">Bulgaria</a>
+          <a href="#tools">Burkina Faso</a> <a href="#tools">Burundi</a>
+          <a href="#tools">Côte d'lvoire</a> <a href="#tools">Cabo Verde</a>
+          <a href="#tools">Cambodia</a> <a href="#tools">Cameroon</a>
+          <a href="#tools">Canada</a> <a href="#tools">Central African Republic</a>
+          <a href="#tools">Chad</a> <a href="#tools">Chile</a>
+          <a href="#tools">China</a> <a href="#tools">Colombia</a>
+          <a href="#tools">Comoros</a> <a href="#tools">Congo (Congo-Brazaville)</a>
+          <a href="#tools">Costa Rica</a> <a href="#tools">Croatia</a>
+          <a href="#tools">Cuba</a> <a href="#tools">Cyprus</a>
+          <a href="#tools">Czechia (Czech Republic)</a> <a href="#tools">Democratic Republic of the Congo</a>
+          <a href="#tools">Denmark</a> <a href="#tools">Djibouti</a>
+          <a href="#tools">Dominica</a> <a href="#tools">Dominican Republic</a>
+          <a href="#tools">Ecuador</a> <a href="#tools">Egypt</a>
+          <a href="#tools">El Salvador</a> <a href="#tools">Equatorial Guinea</a>
+          <a href="#tools">Eritrea</a> <a href="#tools">Estonia</a>
+          <a href="#tools">Eswatini (fmr. Swaziland)</a> <a href="#tools">Ethiopia</a>
+          <a href="#tools">Fiji</a> <a href="#tools">Finland</a>
+          <a href="#tools">France</a> <a href="#tools">Gabon</a>
+          <a href="#tools">Gambia</a> <a href="#tools">Georgia</a>
+          <a href="#tools">Germany</a> <a href="#tools">Ghana</a>
+          <a href="#tools">Greece</a> <a href="#tools">Grenada</a>
+          <a href="#tools">Guatemala</a> <a href="#tools">Guinea</a>
+          <a href="#tools">Guinea-Bissau</a> <a href="#tools">Guyana</a>
+          <a href="#tools">Haiti</a> <a href="#tools">Holy See</a>
+          <a href="#tools">Honduras</a> <a href="#tools">Hungary</a>
+          <a href="#tools">Iceland</a> <a href="#tools">India</a>
+          <a href="#tools">Indonesia</a> <a href="#tools">Iran</a>
+          <a href="#tools">Iraq</a> <a href="#tools">Ireland</a>
+          <a href="#tools">Israel</a> <a href="#tools">Italy</a>
+          <a href="#tools">Jamaica</a> <a href="#tools">Japan</a>
+          <a href="#tools">Jordan</a> <a href="#tools">Kazakhstan</a>
+          <a href="#tools">Kenya</a> <a href="#tools">Kiribati</a>
+          <a href="#tools">Kuwait</a> <a href="#tools">Kyrgyzstan</a>
+          <a href="#tools">Laos</a> <a href="#tools">Lativa</a>
+          <a href="#tools">Lebanon</a> <a href="#tools">Lesotho</a>
+          <a href="#tools">Liberia</a> <a href="#tools">Libya</a>
+          <a href="#tools">Liechtenstein</a> <a href="#tools">Lithuania</a>
+          <a href="#tools">Luxembourg</a> <a href="#tools">Madagascar</a>
+          <a href="#tools">Malawi</a> <a href="#tools">Malaysia</a>
+          <a href="#tools">Maldives</a> <a href="#tools">Mali</a>
+          <a href="#tools">Malta</a> <a href="#tools">Marshall Islands</a>
+          <a href="#tools">Mauritania</a> <a href="#tools">Mauritius</a>
+          <a href="#tools">Mexico</a> <a href="#tools">Micronesia</a>
+          <a href="#tools">Moldova</a> <a href="#tools">Monaco</a>
+          <a href="#tools">Mangolia</a> <a href="#tools">Montenegro</a>
+          <a href="#tools">Morocco</a> <a href="#tools">Mozambique</a>
+          <a href="#tools">Myanmar (formely Burma)</a> <a href="#tools">Namibia</a>
+          <a href="#tools">Nauru</a> <a href="#tools">Nepal</a>
+          <a href="#tools">Netherlands</a> <a href="#tools">New Zealand</a>
+          <a href="#tools">Nicaragua</a> <a href="#tools">Niger</a>
+          <a href="#tools">Nigeria</a> <a href="#tools">North Korea</a>
+          <a href="#tools">North Macedonia</a> <a href="#tools">Norway</a>
+          <a href="#tools">Oman</a> <a href="#tools">Pakistan</a>
+          <a href="#tools">Palau</a> <a href="#tools">Palestine State</a>
+          <a href="#tools">Panama</a> <a href="#tools">Papua New Guinea</a>
+          <a href="#tools">Paraguay</a> <a href="#tools">Peru</a>
+          <a href="#tools">Philippines</a> <a href="#tools">Poland</a>
+          <a href="#tools">Portugal</a> <a href="#tools">Qatar</a>
+          <a href="#tools">Romania</a> <a href="#tools">Russia</a>
+          <a href="#tools">Rwanda</a> <a href="#tools">Saint Kitts and Nevis</a>
+          <a href="#tools">Saint Lucia</a> <a href="#tools">Sanit Vincent and the Grenadines</a>
+          <a href="#tools">Samoa</a> <a href="#tools">San Marino</a>
+          <a href="#tools">Sao Tome and Principe</a> <a href="#tools">Saudi Arabia</a>
+          <a href="#tools">Senegal</a> <a href="#tools">Serbia</a>
+          <a href="#tools">Seychelles</a> <a href="#tools">Sierra Leone</a>
+          <a href="#tools">Singapore</a> <a href="#tools">Solvakia</a>
+          <a href="#tools">Solvenia</a> <a href="#tools">Solomon Islands</a>
+          <a href="#tools">Somalia</a> <a href="#tools">South Africa</a>
+          <a href="#tools">South Korea</a> <a href="#tools">South Sudan</a>
+          <a href="#tools">Spain</a> <a href="#tools">Sri Lanka</a>
+          <a href="#tools">Sudan</a> <a href="#tools">Suriname</a>
+          <a href="#tools">Sweden</a> <a href="#tools">Switzerland</a>
+          <a href="#tools">Syria</a> <a href="#tools">Tajikistan</a>
+          <a href="#tools">Tanzania</a> <a href="#tools">Thailand</a>
+          <a href="#tools">Timor-Leste</a> <a href="#tools">Togo</a>
+          <a href="#tools">Tonga</a> <a href="#tools">Trinidad and Tobago</a>
+          <a href="#tools">Tunisia</a> <a href="#tools">Turkey</a>
+          <a href="#tools">Turkmenistan</a> <a href="#tools">Tuvalu</a>
+          <a href="#tools">Uganda</a> <a href="#tools">Ukraine</a>
+          <a href="#tools">United Arab Emirates</a> <a href="#tools">United Kingdom</a>
+          <a href="#tools">United States of America</a> <a href="#tools">Uruguay</a>
+          <a href="#tools">Uzbekistan</a> <a href="#tools">Vanuatu</a>
+          <a href="#tools">Venezuela</a> <a href="#tools">Vietnam</a>
+          <a href="#tools">Yemen</a> <a href="#tools">Zambia</a>
+          <a href="#tools">Zimbabwe</a>
+        </div>
+      </div><br><br>
+           
+        <label for= "recommendation" id="recommend">Would you recommend our university to a friend?</label><br>
+         
+          <div id="radio-button">
+        <input type="radio" id="Definitely" name="recommend" value="Definitely" required>
+        <label for="Definitely" id=Definitely-label>Definitely</label><br>
+        <input type="radio" id="Maybe" name="recommend" value="Maybe" required>
+        <label for="Maybe" id=Maybe-label>Maybe</label><br>
+        <input type="radio" id="Not-sure" name="recommend" value="Not sure" required>
+        <label for="Not sure" id=Not-sure-label>Not sure</label><br><br>
+          </div>
+         
+        <label for= "" id="checkbox-label">What would you like to see improved? (Check all that apply)</label><br>
+         
+          <div id="checkbox">
+        <input type="checkbox" id="Materials" name="improvements" value="Materials">
+        <label for="Materials" id="Materials-label">Let more materials be optional</label><br>
+        <input type="checkbox" id="building" name="improvements" value="building">
+        <label for="building" id="building-label">Improve buildings quality</label><br>
+        <input type="checkbox" id="parking" name="improvements" value="parking">
+        <label for="parking" id="parking-label">Improve parking space</label><br><br>
+          </div>
+         
+      <label for="textarea" id="textarea-label">Any comments or suggestions?</label><br>
+        <textarea rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+        <input type="submit" id="submit" class="submit" value="submit"></input>
+              </form>
+      </fieldset>
+           </body>
+           </html>

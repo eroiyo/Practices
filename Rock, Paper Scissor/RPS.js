@@ -46,10 +46,8 @@ if(human=="SCISSOR"){
 }
 if(human==computer)
 {
-    console.log("Equal");
-    Pscore++;
-    PCscore++;
-    return true;
+    console.log("Equal")
+    return true
 }else{
     if(human % 2 ==0)
     {
