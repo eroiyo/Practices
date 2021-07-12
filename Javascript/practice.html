@@ -25,30 +25,25 @@
     </section>
 
   </body>
-  <script>
-    let quote = 'I do not like green eggs and ham. I do not like them, Sam-I-Am.';
-    let substring = 'green eggs and ham';
-
-    // Add your code here
-
-    //Retrieve the length of the quote, and store it in a variable called quoteLength.
-    let quoteLength= quote.lenght
-    //Find the index position where substring appears in quote, and store that value in a  variable called index.
-    let index=quote.indexOf(substring)
-    //Use a combination of the variables you have and available string properties/methods to trim down the original quote to "I do not like green eggs and ham.", and store it in a variable called revisedQuote.
-    let revisedQuote="I do not like green eggs and ham."
-    // Don't edit the code below here!
-
-    const section = document.querySelector('section');
-
-    section.innerHTML = ' ';
-    let para1 = document.createElement('p');
-    para1.textContent = `The quote is ${ quoteLength } characters long.`;
-    let para2 = document.createElement('p');
-    para2.textContent = revisedQuote;
-
-    section.appendChild(para1);
-    section.appendChild(para2);
-  </script>
+<script>
+    function palindrome(stringa) {
+    stringa= stringa.toLowerCase();
+    var array =stringa.split('')
+    last=array.length-1;
+    first=0;
+    result=true;
+    while(first<=last)
+    {
+      if(array[first]!=array[last]){
+        return false
+      }
+      first=first+1
+      last=last-1;
+    }
+    return true;
+  }
+var word = prompt("Select a word");
+console.log(palindrome(word))
+</script>
 
 </html>
